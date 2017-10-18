@@ -20,7 +20,7 @@
                 <asp:Panel ID="panelInfo" Visible="False" runat="server">
                     <asp:Label ID="lblInfo" runat="server" Text="Informacje podstawowe"></asp:Label>
                     <asp:TextBox ID="txtInfo" TextMode="MultiLine" Rows="4" runat="server"></asp:TextBox>
-                    <asp:Button ID="btnClear" runat="server" Text="Button" />
+                    <asp:Button ID="btnClear" runat="server" Text="Wyczyść" OnClick="btnClear_Click" />
                 </asp:Panel>
             </div>
         </div>

@@ -54,7 +54,10 @@ namespace SzkolenieTechniczne02_01
 
         protected void btnClear_Click(object sender, EventArgs e)
         {
-
+            txtName.Text = "";
+            ddlAge.SelectedIndex = 0;
+            txtInfo.Text = "";
+            panelInfo.Visible = false;
         }
 
         #endregion
