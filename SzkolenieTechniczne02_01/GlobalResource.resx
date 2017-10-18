@@ -123,13 +123,22 @@
   <data name="Clear" xml:space="preserve">
     <value>Wyczyść</value>
   </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Płeć</value>
+  </data>
   <data name="Information" xml:space="preserve">
     <value>Informacje podstawowe</value>
+  </data>
+  <data name="Men" xml:space="preserve">
+    <value>Mężczyzna</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Imię</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Wyślij</value>
+  </data>
+  <data name="Women" xml:space="preserve">
+    <value>Kobieta</value>
   </data>
 </root>

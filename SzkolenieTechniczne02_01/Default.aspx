@@ -14,6 +14,8 @@
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
             <asp:Label ID="lblAge" runat="server" ></asp:Label>
             <asp:DropDownList ID="ddlAge" runat="server"></asp:DropDownList>
+            <asp:Label ID="lblGender" runat="server"></asp:Label>
+            <asp:CheckBoxList ID="cblGender" runat="server"></asp:CheckBoxList>
             <asp:Button ID="btnSend" runat="server" OnClick="btnSend_Click"/>
 
             <div >

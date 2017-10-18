@@ -79,11 +79,29 @@ namespace SzkolenieTechniczne02_01 {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Płeć.
+        /// </summary>
+        internal static string Gender {
+            get {
+                return ResourceManager.GetString("Gender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Informacje podstawowe.
         /// </summary>
         internal static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mężczyzna.
+        /// </summary>
+        internal static string Men {
+            get {
+                return ResourceManager.GetString("Men", resourceCulture);
             }
         }
         
@@ -102,6 +120,15 @@ namespace SzkolenieTechniczne02_01 {
         internal static string Send {
             get {
                 return ResourceManager.GetString("Send", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kobieta.
+        /// </summary>
+        internal static string Women {
+            get {
+                return ResourceManager.GetString("Women", resourceCulture);
             }
         }
     }

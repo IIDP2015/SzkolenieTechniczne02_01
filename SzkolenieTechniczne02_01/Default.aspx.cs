@@ -15,6 +15,7 @@ namespace SzkolenieTechniczne02_01
             if (IsPostBack) return;
             InitAge();
             InitResources();
+            InitGender();
         }
 
         #region Methods
@@ -26,6 +27,7 @@ namespace SzkolenieTechniczne02_01
             lblInfo.Text = GlobalResource.Information;
             btnSend.Text = GlobalResource.Send;
             btnClear.Text = GlobalResource.Clear;
+            lblGender.Text = GlobalResource.Gender;
         }
 
         void InitAge()
@@ -43,9 +45,17 @@ namespace SzkolenieTechniczne02_01
             }
         }
 
+        void InitGender()
+        {
+            cblGender.Items.Add(GlobalResource.Men);
+            cblGender.Items.Add(GlobalResource.Women);
+        }
+
         bool ControlIsNummOrEmpty()
         {
-            return string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(ddlAge.SelectedValue);
+            return string.IsNullOrEmpty(txtName.Text)
+                   || string.IsNullOrEmpty(ddlAge.SelectedValue) 
+                   || string.IsNullOrEmpty(cblGender.SelectedValue);
         }
 
         #endregion
@@ -57,7 +67,9 @@ namespace SzkolenieTechniczne02_01
             if (ControlIsNummOrEmpty())
                 return;
             panelInfo.Visible = true;
-            txtInfo.Text += $"Imię: {txtName.Text} Wiek: {ddlAge.SelectedValue}\n";
+            txtInfo.Text += $"Imię: {txtName.Text} " +
+                            $"Wiek: {ddlAge.SelectedValue}" +
+                            $"Płeć: {cblGender.SelectedValue}\n";
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
