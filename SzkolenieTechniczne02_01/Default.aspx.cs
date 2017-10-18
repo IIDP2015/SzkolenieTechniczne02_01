@@ -12,11 +12,9 @@ namespace SzkolenieTechniczne02_01
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                InitAge();
-                InitResources();
-            }
+            if (IsPostBack) return;
+            InitAge();
+            InitResources();
         }
 
         #region Methods
