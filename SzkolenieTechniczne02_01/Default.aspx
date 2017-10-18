@@ -10,17 +10,17 @@
 <form id="form1" runat="server">
     <div>
         <div >
-            <asp:Label ID="lblName" runat="server" Text="Imię"></asp:Label>
+            <asp:Label ID="lblName" runat="server" ></asp:Label>
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-            <asp:Label ID="lblAge" runat="server" Text="Wiek"></asp:Label>
+            <asp:Label ID="lblAge" runat="server" ></asp:Label>
             <asp:DropDownList ID="ddlAge" runat="server"></asp:DropDownList>
-            <asp:Button ID="btnSend" runat="server" Text="Wyślij" OnClick="btnSend_Click"/>
+            <asp:Button ID="btnSend" runat="server" OnClick="btnSend_Click"/>
 
             <div >
                 <asp:Panel ID="panelInfo" Visible="False" runat="server">
-                    <asp:Label ID="lblInfo" runat="server" Text="Informacje podstawowe"></asp:Label>
+                    <asp:Label ID="lblInfo" runat="server" ></asp:Label>
                     <asp:TextBox ID="txtInfo" TextMode="MultiLine" Rows="4" runat="server"></asp:TextBox>
-                    <asp:Button ID="btnClear" runat="server" Text="Wyczyść" OnClick="btnClear_Click" />
+                    <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" />
                 </asp:Panel>
             </div>
         </div>

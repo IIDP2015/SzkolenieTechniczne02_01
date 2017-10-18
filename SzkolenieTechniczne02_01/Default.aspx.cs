@@ -15,10 +15,20 @@ namespace SzkolenieTechniczne02_01
             if (!IsPostBack)
             {
                 InitAge();
+                InitResources();
             }
         }
 
         #region Methods
+
+        void InitResources()
+        {
+            lblName.Text = GlobalResource.Name;
+            lblAge.Text = GlobalResource.Age;
+            lblInfo.Text = GlobalResource.Information;
+            btnSend.Text = GlobalResource.Send;
+            btnClear.Text = GlobalResource.Clear;
+        }
 
         void InitAge()
         {
